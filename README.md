@@ -108,6 +108,18 @@ This project can be containerized with Docker. Below are the steps to build and 
 
 Ensure that your environment variables for the API keys are correctly set when running the container.
 
+## Usage
+### Intellij AI Plugin
+To use the Ollama Proxy with the IntelliJ AI plugin, follow these steps:
+1. **Install the IntelliJ AI Plugin**:
+2. Open IntelliJ IDEA and navigate to `Settings > Tools > AI Assistant > Models`.
+3. Click on `Enable Ollama`
+4. In the `URL` field, enter `http://localhost:11434`.
+5. Click on Test Connection to ensure the plugin can communicate with the Ollama Proxy.
+6. Select the models you want to use from the list provided by the Ollama Proxy.
+7. Click `Apply` and then `OK` to save your settings.
+
+![Screenshot of IntelliJ AI Plugin Configuration](intellij.png)
 
 ## Contributing
 
