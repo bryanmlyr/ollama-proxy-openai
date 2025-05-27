@@ -1,0 +1,14 @@
+- identifier: openrouter
+  implementation: OPENAI_API_V1
+  models:
+    - mistralai/devstral-small
+    - qwen/qwen3-235b-a22b
+  endpoint: https://openrouter.ai/api/v1/
+  key: $OPENROUTER_API_KEY
+
+- identifier: openai
+  implementation: OPENAI_API_V1
+  models:
+    - gpt-4o-mini
+  endpoint: https://api.openai.com/v1/
+  key: $OPENAI_API_KEY
