@@ -1,4 +1,4 @@
-# Ollama Proxy
+# Ollama Proxy OpenAI
 ## Overview
 
 This project integrates with various AI models through specified APIs, allowing developers to leverage powerful AI capabilities. It supports any OpenAI compatible API, including models from OpenRouter and OpenAI itself.
@@ -112,10 +112,6 @@ Ensure that your environment variables for the API keys are correctly set when r
 ## Contributing
 
 Contributions are welcome! Please feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
