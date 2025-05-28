@@ -35,15 +35,17 @@ The configuration for API integration is defined in a YAML format. Below is an e
 
 ### Configuration Fields
 
-- **identifier**: A unique name for the API integration (e.g., `openrouter`, `openai`).
+- **identifier**: A unique name (e.g., `openrouter`, `openai`). It is used to identify the provider and route requests to the correct API. This should be a descriptive name that reflects the service being used.
 
-- **implementation**: The version of the API being implemented. This is typically set to `OPENAI_API_V1` for compatibility with OpenAI APIs.
+- **implementation**: The version of the API being implemented. This is typically set to `OPENAI_API_V1` for compatibility with OpenAI APIs. Only `OPENAI_API_V1` is currently supported.
 
 - **models**: A list of AI models that can be accessed through this API. Each model is typically identified by its name (e.g., `mistralai/devstral-small`, `gpt-4o-mini`).
 
 - **endpoint**: The URL of the API endpoint where requests will be sent. This should point to the respective service.
 
-- **key**: The environment variable name that holds the API key for authentication (e.g., `$OPENROUTER_API_KEY`, `$OPENAI_API_KEY`).
+- **key**: The environment variable name that holds the API key for authentication (e.g., `$OPENROUTER_API_KEY`, `$OPENAI_API_KEY`). Could also be a direct string value, but using environment variables is recommended.
+
+Note: The model names are concatenated with the identifier to form the complete model name used in requests. For example, if the identifier is `openrouter` and the model is `mistralai/devstral-small`, the full model name would be `openrouter@mistralai/devstral-small` to ensure proper routing of requests to the correct API.
 
 ## How to Configure
 
