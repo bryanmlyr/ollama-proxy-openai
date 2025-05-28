@@ -1,7 +1,8 @@
 # Ollama Proxy OpenAI
 ## Overview
 
-This project integrates with various AI models through specified APIs, allowing developers to leverage powerful AI capabilities. It supports any OpenAI compatible API, including models from OpenRouter and OpenAI itself.
+This proxy is tailored for use with the IntelliJ AI plugin to Bring Your Own Keys (BYOK) functionality, enabling developers to use their own API keys for accessing AI models.
+It supports any OpenAI compatible API, including models from OpenRouter and OpenAI itself.
 
 ## Technologies Used
 
@@ -119,7 +120,7 @@ To use the Ollama Proxy with the IntelliJ AI plugin, follow these steps:
 6. Select the models you want to use from the list provided by the Ollama Proxy.
 7. Click `Apply` and then `OK` to save your settings.
 
-![Screenshot of IntelliJ AI Plugin Configuration](intellij.png)
+![Screenshot of IntelliJ AI Plugin Configuration](docs/intellij.png)
 
 ## Contributing
 
